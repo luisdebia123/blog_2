@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: url(imagen2.jpg); */
+
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menu{
+    background: gray;
+    text-align: center;
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: cornsilk;
+}
+
+.menu ul li{/* Separación de t´tulos de la barra de navegación*/
+    width: 80px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.menu ul li a{/* color de la letra de barra de navegación*/
+    text-decoration: none;
+    color:white;
+}
+
+.barra, .menu ul li:hover{
+    background:lightgrey;
+    border-radius: 3px; /* forma borde de inicio*/
+}
+
+
+.submenu{
+    display: none; /* oculta submenu*/
+}
+
+
+.menu ul li:hover .submenu{/* muestra submenu vertil*/
+    display: block;
+    position: absolute;
+    background: gray;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu ul li:hover .submenu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .submenu ul li{ /* subrayado de subtiyulos*/
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}    
+
+.menu ul li:hover .submenu ul li a:hover{
+    color: white;
+}    
+
+
+
+/*Titulo*/
+.titulo {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 30px;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+
+.titulo {
+    color: #e0dcde;
+    background-color: rgb(51, 51, 51);
+    letter-spacing: .1em;
+    text-shadow: 
+        0 -1px 0 #fff, 
+        0 1px 0 #2e2e2e, 
+        0 2px 0 #2c2c2c, 
+        0 3px 0 #2a2a2a, 
+        0 4px 0 #282828, 
+        0 5px 0 #262626, 
+        0 6px 0 #242424, 
+        0 7px 0 #222, 
+        0 8px 0 #202020, 
+        0 9px 0 #1e1e1e, 
+        0 10px 0 #1c1c1c, 
+        0 11px 0 #1a1a1a, 
+        0 12px 0 #181818, 
+        0 13px 0 #161616, 
+        0 14px 0 #141414, 
+        0 15px 0 #121212, 
+        0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    }
+
+
+.negritatxt{
+    font-weight: bold;
+
+}
